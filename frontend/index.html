@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Study Planner | Login</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+<div class="aurora"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span></div>
+<div class="auth-wrapper">
+  <div class="auth-card">
+
+    <div class="auth-logo">📘 StudyPlanner<span class="dot">.</span></div>
+
+    <!-- LOGIN FORM -->
+    <div id="login-view">
+      <p class="auth-subtitle">Welcome back! Log in to continue your study plan.</p>
+      <div class="auth-error" id="login-error"></div>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="login-email">Email Address</label>
+          <input type="email" id="login-email" required placeholder="you@example.com" />
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" required placeholder="••••••••" minlength="6" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="login-btn">Log In</button>
+      </form>
+      <p class="auth-switch">Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+    </div>
+
+    <!-- SIGNUP FORM -->
+    <div id="signup-view" style="display:none;">
+      <p class="auth-subtitle">Create your account and start planning smarter.</p>
+      <div class="auth-error" id="signup-error"></div>
+      <form id="signup-form">
+        <div class="form-group">
+          <label for="signup-name">Full Name</label>
+          <input type="text" id="signup-name" required placeholder="Jane Student" />
+        </div>
+        <div class="form-group">
+          <label for="signup-email">Email Address</label>
+          <input type="email" id="signup-email" required placeholder="you@example.com" />
+        </div>
+        <div class="form-group">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" required placeholder="At least 6 characters" minlength="6" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="signup-btn">Create Account</button>
+      </form>
+      <p class="auth-switch">Already have an account? <a href="#" id="show-login">Log in</a></p>
+    </div>
+
+  </div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
