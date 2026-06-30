@@ -10,7 +10,11 @@ const app = express();
 connectDB();
 // Middleware
 app.use(cors({
-    origin: "http://127.0.0.1:5500",
+    origin: [
+        "http://127.0.0.1:5500",
+        "http://localhost:5500",
+        "https://idyllic-syrniki-7232aa.netlify.app"
+    ],
     credentials: true
 }));
 app.use(express.json());
