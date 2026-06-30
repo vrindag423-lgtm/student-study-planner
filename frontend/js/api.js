@@ -2,7 +2,7 @@
    API helper — centralizes all fetch calls to the backend
    ========================================================= */
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE ="https://student-study-planner-e0wr.onrender.com/api";
 
 const getToken = () => localStorage.getItem("sp_token");
 const setToken = (token) => localStorage.setItem("sp_token", token);
